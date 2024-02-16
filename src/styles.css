@@ -1,7 +1,12 @@
 .container-weather {
-  color: aquamarine;
+  background-color: aquamarine;
 }
 
 .container-details {
-  color: aqua;
+  background-color: aqua;
+}
+
+button {
+  border-radius: 10%;
+  background-color: aquamarine;
 }
