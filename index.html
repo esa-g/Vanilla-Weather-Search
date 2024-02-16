@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Weather App</h1>
-    </header>
+    <header></header>
     <body>
       <main>
         <div class="container-main">
-
           <div class="container-weather">
             <p>Tuesday</p>
             <div>16 Feb 2024</div>
@@ -20,29 +19,30 @@
 
             <div class="current-weather-icon">☀️</div>
 
-            <div class="current-temperature">24 <span>°C</span>
+            <div class="current-temperature">
+              24 <span>°C</span>
 
-            <div class="current-weather-details">Sunny</div>
+              <div class="current-weather-details">Sunny</div>
+            </div>
           </div>
-
           <div class="container-details">
-            
             <div class="current-weather-humidity">Humidity: 10%</div>
             <div class="current-weather-wind">Wind: 5</div>
-
-            <div class="forecast-one">
-                <div>Wed</div> 
-            </div>
-            <div class="forecast-two">
+            <div class="forecast">
+              <div class="forecast-one">
+                <div>Wed</div>
+              </div>
+              <div class="forecast-two">
                 <div>Thur</div>
-            </div>
-            <div class="forecast-three">
+              </div>
+              <div class="forecast-three">
                 <div>Fri</div>
+              </div>
             </div>
           </div>
-          <button>📍 Change location</button>
         </div>
       </main>
+      <button>📍 Change location</button>
     </body>
     <footer>
       Coded by

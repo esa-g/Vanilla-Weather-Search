@@ -1,3 +1,23 @@
+.main {
+  display: block;
+}
+
+.container-main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border: solid grey;
+  border-radius: 1px;
+  max-width: 400px;
+}
+
+div,
+.container-weather,
+.container-details {
+  min-width: 50px;
+  margin: 20px auto;
+}
+
 .container-weather {
   background-color: aquamarine;
 }
@@ -6,7 +26,18 @@
   background-color: aqua;
 }
 
+.forecast {
+  display: flex;
+}
+
 button {
+  display: block;
   border-radius: 10%;
   background-color: aquamarine;
+  margin: 20px;
+  margin: 20px auto;
+}
+
+footer {
+  text-align: center;
 }
