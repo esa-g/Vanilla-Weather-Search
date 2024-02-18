@@ -48,18 +48,22 @@ div,
 
 #search-form {
   display: block;
-  margin: 20px auto;
+  margin: 0px auto;
+}
+
+#form-input,
+#form-button {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 #form-input {
-  padding: 15px;
-  border-radius: 10px;
+  width: 300px;
 }
 
 #form-button {
-  border-radius: 10px;
   background-color: aquamarine;
-  padding: 15px;
 }
 
 footer {
