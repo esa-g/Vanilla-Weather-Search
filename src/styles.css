@@ -25,13 +25,16 @@ div,
 }
 
 .container-details {
-  background-color: aqua;
+  background-color: cornflowerblue;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .forecast {
   display: flex;
+  padding: 20px 0 0 0;
+  border-top: 1px solid;
+  border-color: lightblue;
   margin: 20px;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +43,7 @@ div,
 .forecast-one,
 .forecast-two,
 .forecast-three {
-  background-color: bisque;
+  background-color: darkcyan;
   border-radius: 10px;
   text-align: center;
   margin: 5px;
@@ -71,6 +74,11 @@ div,
 footer {
   text-align: center;
   margin: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: cornflowerblue;
 }
 
 .week-day,
