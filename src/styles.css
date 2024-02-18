@@ -56,10 +56,12 @@ div,
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
+  border: none;
 }
 
 #form-input {
   width: 300px;
+  background-color: aliceblue;
 }
 
 #form-button {
