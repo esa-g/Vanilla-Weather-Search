@@ -49,8 +49,17 @@ div,
   margin: 5px;
 }
 
-button {
+form {
   display: block;
+}
+
+#city-input {
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#button {
   border-radius: 10px;
   background-color: aquamarine;
   padding: 15px;
