@@ -1,21 +1,20 @@
-.main {
-  display: block;
-}
-
 .container-main {
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 10px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
-  border: solid grey;
-  border-radius: 1px;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 div,
 .container-weather,
 .container-details {
-  min-width: 50px;
   margin: 20px auto;
+  /* 1 = available space on main axis each flex item will take up, e.g. equal amount of space.
+   100px = minimum space of each flex item */
+  flex: 1 100px;
 }
 
 .container-weather {
@@ -28,16 +27,37 @@ div,
 
 .forecast {
   display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-one,
+.forecast-two,
+.forecast-three {
+  background-color: bisque;
+  border-radius: 10px;
+  text-align: center;
 }
 
 button {
   display: block;
-  border-radius: 10%;
+  border-radius: 10px;
   background-color: aquamarine;
-  margin: 20px;
-  margin: 20px auto;
+  padding: 15px;
+  margin: 25px auto;
 }
 
 footer {
   text-align: center;
+}
+
+.week-day,
+.current-date-details,
+#city,
+.current-weather-icon,
+.current-temperatur,
+.current-weather-wind,
+.current-weather-humidity {
+  padding-left: 10px;
 }
