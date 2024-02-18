@@ -46,21 +46,20 @@ div,
   margin: 5px;
 }
 
-form {
+#search-form {
   display: block;
+  margin: 20px auto;
 }
 
-#city-input {
-  margin: 10px auto;
+#form-input {
   padding: 15px;
   border-radius: 10px;
 }
 
-#button {
+#form-button {
   border-radius: 10px;
   background-color: aquamarine;
   padding: 15px;
-  margin: 10px auto;
 }
 
 footer {
