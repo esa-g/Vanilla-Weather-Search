@@ -91,3 +91,11 @@ a {
 .current-weather-humidity {
   padding-left: 10px;
 }
+
+h2 {
+  display: inline;
+}
+
+.current-weather-icon {
+  font-size: 3cap;
+}
