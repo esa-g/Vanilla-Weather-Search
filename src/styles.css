@@ -97,6 +97,10 @@ h2 {
   display: inline;
 }
 
+#current-temperature {
+  font-size: 30px;
+}
+
 .current-weather-icon {
-  font-size: 3cap;
+  height: 90px;
 }

@@ -11,6 +11,7 @@ function weatherUpdate(response) {
   let date = new Date(response.data.time * 1000);
   let timeElement = document.querySelector(".time");
   let dayElement = document.querySelector(".week-day");
+  let icon = document.querySelector("#current-weather-icon");
 
   cityElement.innerHTML = response.data.city;
   // calls formatted day through function
@@ -21,6 +22,8 @@ function weatherUpdate(response) {
   // calls formatted time through function
   timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
+  // inject icon url based on condition data
+  icon.innerHTML = `<img src ="${response.data.condition.icon_url}" class="current-weather-icon" />`;
 
   console.log(response.data);
 }
