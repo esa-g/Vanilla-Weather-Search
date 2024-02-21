@@ -13,6 +13,8 @@ function weatherUpdate(response) {
   let dayElement = document.querySelector(".week-day");
   let icon = document.querySelector("#current-weather-icon");
 
+  // TO BE ADDED: variables for day, month, year
+
   cityElement.innerHTML = response.data.city;
   // calls formatted day through function
   dayElement.innerHTML = formatDay(date);
