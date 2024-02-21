@@ -1,11 +1,56 @@
 function weatherUpdate(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = response.data.temperature.current;
-
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = response.data.city;
+  let descriptionWeatherDetail = document.querySelector(
+    ".current-weather-details"
+  );
+  let humidityElement = document.querySelector(".humidity-data");
+  let windElement = document.querySelector(".wind-data");
+  // additional date element required for parsing
+  let date = new Date(response.data.time * 1000);
+  let timeElement = document.querySelector(".time");
+  let dayElement = document.querySelector(".week-day");
 
+  cityElement.innerHTML = response.data.city;
+  // calls formatted day through function
+  dayElement.innerHTML = formatDay(date);
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  descriptionWeatherDetail.innerHTML = response.data.condition.description;
+  windElement.innerHTML = `${response.data.wind.speed}km/h`;
+  // calls formatted time through function
+  timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
+
+  console.log(response.data);
+}
+
+// format time element
+function formatDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+
+// format day element
+function formatDay(date) {
+  let weekDays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let dayElement = weekDays[date.getDay()];
+  return `${dayElement}`;
 }
 
 function searchCity(city) {
