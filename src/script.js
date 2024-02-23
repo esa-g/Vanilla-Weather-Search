@@ -78,3 +78,28 @@ searchFormElement.addEventListener("submit", SearchSubmit);
 
 // pull weather data upon page reload
 searchCity("Dresden");
+
+function displayForecast() {
+  let days = [`Tue`, `Wed`, `Thu`, `Fri`];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+<div class="forecast-day">
+                <div class="forecast-date">${day}</div>
+                <div class="forecast-icon">☀️</div>
+                <div class="weather-forecast-temp">
+                  <span class="weather-forecast-temp-max"> 18°C </span>
+                  <span class="weather-forecast-temp-min"> 16°C </span>
+                </div>
+              </div>
+              `;
+  });
+
+  let forecastElement = document.querySelector(".forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
